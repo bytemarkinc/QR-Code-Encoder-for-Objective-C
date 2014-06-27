@@ -17,13 +17,13 @@
 		9621845E15431F2800447877 /* libqrencoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9672D35713BD662F0002B0E2 /* libqrencoder.a */; };
 		9672D35B13BD662F0002B0E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9672D35A13BD662F0002B0E2 /* Foundation.framework */; };
 		9672D36B13BD665E0002B0E2 /* DataMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 9672D36413BD665E0002B0E2 /* DataMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9672D36C13BD665E0002B0E2 /* DataMatrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672D36513BD665E0002B0E2 /* DataMatrix.mm */; };
-		9672D36D13BD665E0002B0E2 /* QR_Encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9672D36613BD665E0002B0E2 /* QR_Encode.cpp */; };
+		9672D36C13BD665E0002B0E2 /* DataMatrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672D36513BD665E0002B0E2 /* DataMatrix.mm */; settings = {COMPILER_FLAGS = "-w"; }; };
+		9672D36D13BD665E0002B0E2 /* QR_Encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9672D36613BD665E0002B0E2 /* QR_Encode.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
 		9672D36E13BD665E0002B0E2 /* QR_Encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9672D36713BD665E0002B0E2 /* QR_Encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9672D36F13BD665E0002B0E2 /* QREncoder-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9672D36813BD665E0002B0E2 /* QREncoder-Prefix.pch */; };
 		9672D37013BD665E0002B0E2 /* QREncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9672D36913BD665E0002B0E2 /* QREncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9672D37113BD665E0002B0E2 /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672D36A13BD665E0002B0E2 /* QREncoder.mm */; };
-		BA798313F4E3F133E55601A3 /* QRCodeEncoderDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA798DC2FBEDAA5AD45A414E /* QRCodeEncoderDemoViewController.mm */; };
+		9672D37113BD665E0002B0E2 /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672D36A13BD665E0002B0E2 /* QREncoder.mm */; settings = {COMPILER_FLAGS = "-w"; }; };
+		BA798313F4E3F133E55601A3 /* QRCodeEncoderDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA798DC2FBEDAA5AD45A414E /* QRCodeEncoderDemoViewController.mm */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BA7984CF1043BDE62FC71866 /* QRCodeEncoderDemoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA798FF97165E01902D180BF /* QRCodeEncoderDemoViewController.h */; };
 /* End PBXBuildFile section */
 
@@ -220,7 +220,7 @@
 		9672D34E13BD662F0002B0E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 9672D35113BD662F0002B0E2 /* Build configuration list for PBXProject "QRCodeEncoderObjectiveCAtGithub" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -306,7 +306,6 @@
 		00C0BAC619266A7C00307B8C /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -325,7 +324,6 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/QRCodeEncoderObjectiveCAtGithub.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QRCodeEncoderObjectiveCAtGithub/QRCodeEncoderObjectiveCAtGithub-Prefix.pch";
@@ -369,7 +367,6 @@
 		00CC9FEA19477BFE00CC148D /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -385,7 +382,6 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/QRCodeEncoderObjectiveCAtGithub.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QRCodeEncoderObjectiveCAtGithub/QRCodeEncoderObjectiveCAtGithub-Prefix.pch";
@@ -468,7 +464,6 @@
 		9672D35F13BD662F0002B0E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -478,6 +473,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -485,7 +481,6 @@
 		9672D36013BD662F0002B0E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -501,7 +496,6 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/QRCodeEncoderObjectiveCAtGithub.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QRCodeEncoderObjectiveCAtGithub/QRCodeEncoderObjectiveCAtGithub-Prefix.pch";
@@ -524,7 +518,6 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/QRCodeEncoderObjectiveCAtGithub.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QRCodeEncoderObjectiveCAtGithub/QRCodeEncoderObjectiveCAtGithub-Prefix.pch";
