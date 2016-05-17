@@ -1,5 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = 'QR-Code-Encoder-for-Objective-C'
+    spec.ios.deployment_target = '8.0'
     spec.version      = '1.0.0'
     spec.license      = 'Apache2.0'
     spec.summary      = 'An implementation of QR code encoder for Objective-C ported from Psytec library.'
