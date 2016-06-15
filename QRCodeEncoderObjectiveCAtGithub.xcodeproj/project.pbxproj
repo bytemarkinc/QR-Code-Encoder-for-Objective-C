@@ -223,7 +223,7 @@
 				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 9672D35113BD662F0002B0E2 /* Build configuration list for PBXProject "QRCodeEncoderObjectiveCAtGithub" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
